@@ -25,7 +25,7 @@ git clone https://github.com/slaclab/slic
 Create the build directory within your slic project directory:
 
 ```
-mkdir build && build
+mkdir build && cd build
 ```
 
 The SLIC build system is able to download and install all dependencies for the project if they are not found on your system. This requires a multi-step build for the dependencies to first be downloaded and installed before SLIC itself is built.
