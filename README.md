@@ -177,7 +177,7 @@ make -j8 install
 
 ```
 wget https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-3.2.4.tar.gz
-tar -zxf xerces-c-3.2.3.tar.gz
+tar -zxf xerces-c-3.2.4.tar.gz
 cd xerces-c-3.2.3 && mkdir build && cd build
 cmake -DBUILD_SHARED_LIBS=ON .. -DCMAKE_INSTALL_PREFIX=../install
 make -j8 install
