@@ -6,7 +6,7 @@ if(NOT XercesC_FOUND)
     set(XercesC_INSTALL_DIR ${CMAKE_INSTALL_PREFIX}/XercesC)
     externalproject_add(
         XercesC
-        URL                  "https://downloads.apache.org/xerces/c/3/sources/xerces-c-${XercesC_VERSION}.tar.gz"
+        URL                  "https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-${XercesC_VERSION}.tar.gz"
         SOURCE_DIR           ${CMAKE_BINARY_DIR}/XercesC
         CONFIGURE_COMMAND    CC=${CMAKE_CC_COMPILER} && CXX=${CMAKE_CXX_COMPILER} && ./configure --enable-shared --disable-static --prefix=${XercesC_INSTALL_DIR}
         DOWNLOAD_NO_PROGRESS ON
