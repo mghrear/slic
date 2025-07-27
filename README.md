@@ -25,7 +25,7 @@ git clone https://github.com/slaclab/slic
 Create the build directory within your slic project directory:
 
 ```
-mkdir build && build
+mkdir build && cd build
 ```
 
 The SLIC build system is able to download and install all dependencies for the project if they are not found on your system. This requires a multi-step build for the dependencies to first be downloaded and installed before SLIC itself is built.
@@ -176,9 +176,9 @@ make -j8 install
 #### Xerces
 
 ```
-wget https://mirrors.ocf.berkeley.edu/apache//xerces/c/3/sources/xerces-c-3.2.3.tar.gz
-tar -zxf xerces-c-3.2.3.tar.gz
-cd xerces-c-3.2.3 && mkdir build && cd build
+wget https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-3.2.4.tar.gz
+tar -zxf xerces-c-3.2.4.tar.gz
+cd xerces-c-3.2.4 && mkdir build && cd build
 cmake -DBUILD_SHARED_LIBS=ON .. -DCMAKE_INSTALL_PREFIX=../install
 make -j8 install
 ```
